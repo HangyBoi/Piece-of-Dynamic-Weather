@@ -592,6 +592,15 @@ VisualEffect:
       - m_Value: 2.5
         m_Name: Wobble Intensity
         m_Overridden: 1
+      - m_Value: 0.26
+        m_Name: Core Dissolve
+        m_Overridden: 1
+      - m_Value: 1.15
+        m_Name: Layer1 Scale X
+        m_Overridden: 1
+      - m_Value: 1.15
+        m_Name: Layer1 Scale Y
+        m_Overridden: 1
     m_Vector2f:
       m_Array: []
     m_Vector3f:
@@ -606,7 +615,19 @@ VisualEffect:
         m_Name: Bottom Ring Scale
         m_Overridden: 1
     m_Vector4f:
-      m_Array: []
+      m_Array:
+      - m_Value: {x: 0.040094346, y: 0.023262287, z: 0.023262287, w: 0}
+        m_Name: Bottom Ring Color
+        m_Overridden: 1
+      - m_Value: {x: 0.17213269, y: 0.16220185, z: 0.254717, w: 0}
+        m_Name: Core Color
+        m_Overridden: 1
+      - m_Value: {x: 1, y: 1, z: 1, w: 0}
+        m_Name: Layer1 Color
+        m_Overridden: 1
+      - m_Value: {x: 0.062941864, y: 0.028880388, z: 0.103773594, w: 0}
+        m_Name: Top Ring Color
+        m_Overridden: 1
     m_Uint:
       m_Array: []
     m_Int:
@@ -698,7 +719,10 @@ VisualEffect:
     m_NamedObject:
       m_Array: []
     m_Bool:
-      m_Array: []
+      m_Array:
+      - m_Value: 0
+        m_Name: Use Procedural Texture
+        m_Overridden: 1
 --- !u!4 &2004553884
 Transform:
   m_ObjectHideFlags: 0
