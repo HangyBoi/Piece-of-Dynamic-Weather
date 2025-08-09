@@ -589,10 +589,10 @@ VisualEffect:
       - m_Value: 0.85
         m_Name: Layer1 Dissolve
         m_Overridden: 1
-      - m_Value: 2.5
+      - m_Value: 0.5
         m_Name: Wobble Intensity
         m_Overridden: 1
-      - m_Value: 0.26
+      - m_Value: 0.57
         m_Name: Core Dissolve
         m_Overridden: 1
       - m_Value: 1.15
@@ -601,8 +601,35 @@ VisualEffect:
       - m_Value: 1.15
         m_Name: Layer1 Scale Y
         m_Overridden: 1
+      - m_Value: 20
+        m_Name: Shear Noise Scale
+        m_Overridden: 1
+      - m_Value: 20
+        m_Name: Twirl Noise Scale
+        m_Overridden: 0
+      - m_Value: 8
+        m_Name: Twirl Amount
+        m_Overridden: 1
+      - m_Value: 8
+        m_Name: Shear Amount
+        m_Overridden: 0
+      - m_Value: 1
+        m_Name: General Noise Power
+        m_Overridden: 1
+      - m_Value: 0.827
+        m_Name: L1 Dissolve
+        m_Overridden: 1
+      - m_Value: 1
+        m_Name: BR 01 General Noise Power
+        m_Overridden: 1
+      - m_Value: 0.5
+        m_Name: BR 01 Dissolve
+        m_Overridden: 0
     m_Vector2f:
-      m_Array: []
+      m_Array:
+      - m_Value: {x: 0, y: 1}
+        m_Name: Shear Speed
+        m_Overridden: 1
     m_Vector3f:
       m_Array:
       - m_Value: {x: 1, y: 1, z: 0.75}
@@ -627,6 +654,12 @@ VisualEffect:
         m_Overridden: 1
       - m_Value: {x: 0.062941864, y: 0.028880388, z: 0.103773594, w: 0}
         m_Name: Top Ring Color
+        m_Overridden: 1
+      - m_Value: {x: 0.5510858, y: 0.5350659, z: 0.6792453, w: 0}
+        m_Name: L1 Color
+        m_Overridden: 1
+      - m_Value: {x: 0.31132078, y: 0.14244395, z: 0.2919847, w: 0}
+        m_Name: BR 01 Color
         m_Overridden: 1
     m_Uint:
       m_Array: []
@@ -717,7 +750,13 @@ VisualEffect:
     m_Gradient:
       m_Array: []
     m_NamedObject:
-      m_Array: []
+      m_Array:
+      - m_Value: {fileID: 2800000, guid: 6977623e0f161cb49aa522b4e605ce2e, type: 3}
+        m_Name: Core Noise Texture
+        m_Overridden: 1
+      - m_Value: {fileID: 162581146314474548, guid: b697ddad8ff1a92458ff7c4fb242c574, type: 3}
+        m_Name: BR 01 Mesh
+        m_Overridden: 0
     m_Bool:
       m_Array:
       - m_Value: 0
