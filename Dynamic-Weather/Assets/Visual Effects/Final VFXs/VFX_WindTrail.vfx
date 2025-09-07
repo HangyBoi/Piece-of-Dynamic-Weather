@@ -72,7 +72,7 @@ MonoBehaviour:
   - name: Spawn
     collapsed: 1
   - name: Initialize
-    collapsed: 0
+    collapsed: 1
   - name: ===========
     collapsed: 1
   - name: Looping Motion

@@ -1345,25 +1345,25 @@ VisualEffect:
       - m_Value: 0.7
         m_Name: Wind Spawn Rate
         m_Overridden: 1
-      - m_Value: 0.3
+      - m_Value: 0.7
         m_Name: Max Life Time
         m_Overridden: 1
-      - m_Value: 0.2
+      - m_Value: 0.3
         m_Name: Min Life Time
         m_Overridden: 1
       - m_Value: 0
         m_Name: Loop Amplitude
         m_Overridden: 1
-      - m_Value: 10
+      - m_Value: 1000
         m_Name: Turbulence Drag
         m_Overridden: 1
       - m_Value: 1
         m_Name: Turubulence Frequency
         m_Overridden: 1
-      - m_Value: 10000
+      - m_Value: 1000
         m_Name: Turbulence Intensity
         m_Overridden: 1
-      - m_Value: 0.3
+      - m_Value: 0.7
         m_Name: Trail LifetIme
         m_Overridden: 1
       - m_Value: 0.5
@@ -2116,6 +2116,63 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 345528603}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &382143912
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 382143914}
+  - component: {fileID: 382143913}
+  m_Layer: 0
+  m_Name: WeatherOrchestrator
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &382143913
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 382143912}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c833aa5d4b519e04a86e66f0c18b4e42, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  stormIntensity: 0
+  isTornadoActive: 1
+  isRainActive: 1
+  isLightningActive: 1
+  isWindActive: 1
+  tornadoController: {fileID: 2004553886}
+  tornadoVFX: {fileID: 2004553883}
+  dustCloudVFX: {fileID: 193687821}
+  circularWindVFX: {fileID: 141756791}
+  directionalWindVFX: {fileID: 1836720430}
+  rainVFX: {fileID: 866586586}
+  midSkyLightningVFX: {fileID: 317161167}
+  highSkyLightningVFX: {fileID: 788953916}
+--- !u!4 &382143914
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 382143912}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &410087039
 GameObject:
   m_ObjectHideFlags: 0
@@ -2895,6 +2952,38 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 732743998}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &733922787
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 733922788}
+  m_Layer: 0
+  m_Name: TornadoSystem_Parent
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &733922788
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 733922787}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 2004553884}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &738520736
 GameObject:
   m_ObjectHideFlags: 0
@@ -3100,7 +3189,7 @@ VisualEffect:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 788953914}
   m_Enabled: 1
-  m_Asset: {fileID: 8926484042661614526, guid: 85da9817961cb08418b88f6dcb52fb71, type: 3}
+  m_Asset: {fileID: 8926484042661614526, guid: 3c8fbd09b2cef794bb0e2512b4a9e693, type: 3}
   m_InitialEventName: OnPlay
   m_InitialEventNameOverriden: 0
   m_StartSeed: 0
@@ -3125,7 +3214,7 @@ VisualEffect:
       - m_Value: 100
         m_Name: Loop Amplitude
         m_Overridden: 1
-      - m_Value: 100
+      - m_Value: 1000
         m_Name: Turbulence Drag
         m_Overridden: 1
       - m_Value: 1
@@ -3136,6 +3225,9 @@ VisualEffect:
         m_Overridden: 1
       - m_Value: 1
         m_Name: Trail LifetIme
+        m_Overridden: 1
+      - m_Value: 4
+        m_Name: Lightning Spawn Rate
         m_Overridden: 1
     m_Vector2f:
       m_Array:
@@ -3155,6 +3247,9 @@ VisualEffect:
         m_Overridden: 1
       - m_Value: {x: 0, y: 0, z: 0}
         m_Name: Initial Wind Speed
+        m_Overridden: 1
+      - m_Value: {x: 0, y: 0, z: 0}
+        m_Name: Initial Lightning Speed
         m_Overridden: 1
     m_Vector4f:
       m_Array:
@@ -3269,6 +3364,38 @@ VisualEffect:
           m_NumColorKeys: 3
           m_NumAlphaKeys: 2
         m_Name: Color Mapping Gradient
+        m_Overridden: 1
+      - m_Value:
+          serializedVersion: 2
+          key0: {r: 0, g: 0, b: 0, a: 0}
+          key1: {r: 4, g: 3.8060844, b: 1.4528301, a: 1}
+          key2: {r: 0.3, g: 0.3, b: 0.3, a: 0}
+          key3: {r: 0, g: 0, b: 0, a: 0}
+          key4: {r: 0, g: 0, b: 0, a: 0}
+          key5: {r: 0, g: 0, b: 0, a: 0}
+          key6: {r: 0, g: 0, b: 0, a: 0}
+          key7: {r: 0, g: 0, b: 0, a: 0}
+          ctime0: 0
+          ctime1: 32768
+          ctime2: 65535
+          ctime3: 0
+          ctime4: 0
+          ctime5: 0
+          ctime6: 0
+          ctime7: 0
+          atime0: 0
+          atime1: 32382
+          atime2: 65535
+          atime3: 65535
+          atime4: 0
+          atime5: 0
+          atime6: 0
+          atime7: 0
+          m_Mode: 0
+          m_ColorSpace: 1
+          m_NumColorKeys: 3
+          m_NumAlphaKeys: 3
+        m_Name: Lightning Trail Color Gradient
         m_Overridden: 1
     m_NamedObject:
       m_Array: []
@@ -4868,6 +4995,37 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1596638107}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1644840189
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1644840190}
+  m_Layer: 0
+  m_Name: ----------
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1644840190
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1644840189}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: -0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1667068235
 GameObject:
   m_ObjectHideFlags: 0
@@ -6258,7 +6416,7 @@ VisualEffect:
       - m_Value: 0.7
         m_Name: BR 01 Dissolve
         m_Overridden: 1
-      - m_Value: 5
+      - m_Value: 30
         m_Name: Tornado Lifetime Duration
         m_Overridden: 1
       - m_Value: 2.24
@@ -6624,15 +6782,15 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2004553881}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 1368561217}
   - {fileID: 141756792}
   - {fileID: 193687822}
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 733922788}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!135 &2004553885
 SphereCollider:
@@ -7041,10 +7199,12 @@ SceneRoots:
   - {fileID: 287124375}
   - {fileID: 286676235}
   - {fileID: 1187989830}
-  - {fileID: 2004553884}
+  - {fileID: 733922788}
   - {fileID: 1836720431}
   - {fileID: 317161168}
   - {fileID: 788953917}
   - {fileID: 866586587}
   - {fileID: 1429762808}
   - {fileID: 1826925137}
+  - {fileID: 1644840190}
+  - {fileID: 382143914}
