@@ -85,9 +85,9 @@ MonoBehaviour:
     collapsed: 0
   uiBounds:
     serializedVersion: 2
-    x: -804
+    x: -867
     y: -494
-    width: 2881
+    width: 2944
     height: 2864
 --- !u!114 &114350483966674976
 MonoBehaviour:
@@ -2718,7 +2718,7 @@ MonoBehaviour:
   - {fileID: 8926484042661614974}
   - {fileID: 8926484042661614978}
   m_UIPosition: {x: 0, y: 0}
-  m_UICollapsed: 1
+  m_UICollapsed: 0
   m_UISuperCollapsed: 0
   m_MasterSlot: {fileID: 8926484042661614973}
   m_MasterData:
@@ -2727,7 +2727,7 @@ MonoBehaviour:
       m_Type:
         m_SerializableType: UnityEditor.VFX.AABox, Unity.VisualEffectGraph.Editor,
           Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-      m_SerializableObject: '{"center":{"x":0.0,"y":0.0,"z":0.0},"size":{"x":1.0,"y":1.0,"z":1.0}}'
+      m_SerializableObject: '{"center":{"x":0.0,"y":0.0,"z":0.0},"size":{"x":200.0,"y":200.0,"z":200.0}}'
     m_Space: 0
   m_Property:
     name: bounds
@@ -7278,7 +7278,7 @@ MonoBehaviour:
     linkedSlots:
     - outputSlot: {fileID: 8926484042661615333}
       inputSlot: {fileID: 8926484042661615337}
-    position: {x: -804, y: 997}
+    position: {x: -867, y: 995}
     expandedSlots: []
     expanded: 1
     supecollapsed: 0
