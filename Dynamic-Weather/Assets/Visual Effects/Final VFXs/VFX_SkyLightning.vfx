@@ -362,8 +362,8 @@ MonoBehaviour:
     max: Infinity
     enumValues: []
     descendantCount: 0
-  - name: Trail LifetIme
-    path: Trail LifetIme
+  - name: Trail Lifetime
+    path: Trail Lifetime
     tooltip: 
     space: -1
     spaceable: 0
@@ -8205,7 +8205,7 @@ MonoBehaviour:
   m_InputSlots: []
   m_OutputSlots:
   - {fileID: 8926484042661614797}
-  m_ExposedName: Trail LifetIme
+  m_ExposedName: Trail Lifetime
   m_Exposed: 1
   m_Order: 11
   m_Category: Lightning Trails

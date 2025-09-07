@@ -448,8 +448,8 @@ MonoBehaviour:
     max: Infinity
     enumValues: []
     descendantCount: 0
-  - name: Trail LifetIme
-    path: Trail LifetIme
+  - name: Trail Lifetime
+    path: Trail Lifetime
     tooltip: 
     space: -1
     spaceable: 0
@@ -588,7 +588,7 @@ MonoBehaviour:
   - {fileID: 114946465509916290}
   - {fileID: 114780028408030698}
   dataType: 0
-  capacity: 10000
+  capacity: 25000
   stripCapacity: 16
   particlePerStripCount: 16
   needsComputeBounds: 0
@@ -8131,7 +8131,7 @@ MonoBehaviour:
   m_InputSlots: []
   m_OutputSlots:
   - {fileID: 8926484042661615375}
-  m_ExposedName: Trail LifetIme
+  m_ExposedName: Trail Lifetime
   m_Exposed: 1
   m_Order: 1
   m_Category: Wind Trails
