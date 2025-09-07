@@ -558,11 +558,11 @@ MonoBehaviour:
   stickyNoteInfos: []
   categories:
   - name: Base Settings
-    collapsed: 0
+    collapsed: 1
   - name: Tornado Core Settings
-    collapsed: 0
+    collapsed: 1
   - name: Wobble Animation Settings
-    collapsed: 0
+    collapsed: 1
   - name: Scale Animation Curves
     collapsed: 1
   - name: Tornado Layer 1 Settings
@@ -578,7 +578,7 @@ MonoBehaviour:
     x: -21
     y: -550
     width: 2647
-    height: 6456
+    height: 6460
 --- !u!114 &114350483966674976
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2352,7 +2352,7 @@ MonoBehaviour:
   m_Parent: {fileID: 114350483966674976}
   m_Children: []
   m_UIPosition: {x: 0, y: 0}
-  m_UICollapsed: 0
+  m_UICollapsed: 1
   m_UISuperCollapsed: 0
   m_InputSlots: []
   m_OutputSlots:

@@ -1787,7 +1787,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &272159896
 Transform:
   m_ObjectHideFlags: 0
@@ -1847,7 +1847,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &286676235
 Transform:
   m_ObjectHideFlags: 0
@@ -2380,6 +2380,9 @@ VisualEffect:
         m_Overridden: 1
       - m_Value: 0.5
         m_Name: Lightning Spawn Rate
+        m_Overridden: 1
+      - m_Value: 0.5
+        m_Name: Trail Lifetime
         m_Overridden: 1
     m_Vector2f:
       m_Array:
@@ -2941,13 +2944,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 330585543}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.04413545, y: 0.126074, z: -0.0056147384, w: 0.99102265}
-  m_LocalPosition: {x: 0, y: 19, z: -38}
+  m_LocalRotation: {x: 0.04449116, y: 0, z: 0, w: 0.9990098}
+  m_LocalPosition: {x: 0, y: 19, z: -42}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 2004553884}
-  m_LocalEulerAnglesHint: {x: 5.1, y: 14.5, z: 0}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 5.1, y: 0, z: 0}
 --- !u!114 &330585547
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9114,7 +9117,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1264777495
 Transform:
   m_ObjectHideFlags: 0
@@ -11951,7 +11954,7 @@ VisualEffect:
       - m_Value: 20
         m_Name: SpawnRate
         m_Overridden: 1
-      - m_Value: 100
+      - m_Value: 10
         m_Name: Wind Spawn Rate
         m_Overridden: 1
       - m_Value: 4
@@ -12136,7 +12139,7 @@ Transform:
   m_GameObject: {fileID: 1836720428}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 10, z: 0}
+  m_LocalPosition: {x: -27.1, y: 10, z: -2.4}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -13598,7 +13601,7 @@ VisualEffect:
       - m_Value: 0.85
         m_Name: Layer1 Dissolve
         m_Overridden: 1
-      - m_Value: 100
+      - m_Value: 1
         m_Name: Wobble Intensity
         m_Overridden: 1
       - m_Value: 0.6
@@ -14011,7 +14014,6 @@ Transform:
   - {fileID: 1368561217}
   - {fileID: 141756792}
   - {fileID: 193687822}
-  - {fileID: 330585546}
   m_Father: {fileID: 733922788}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!135 &2004553885
@@ -15238,6 +15240,7 @@ SceneRoots:
   - {fileID: 272159896}
   - {fileID: 1264777495}
   - {fileID: 1187989830}
+  - {fileID: 330585546}
   - {fileID: 733922788}
   - {fileID: 1836720431}
   - {fileID: 317161168}

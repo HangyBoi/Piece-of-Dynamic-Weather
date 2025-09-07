@@ -36,15 +36,15 @@ MonoBehaviour:
   stickyNoteInfos: []
   categories:
   - name: Spawn
-    collapsed: 0
+    collapsed: 1
   - name: Initialize
+    collapsed: 1
+  - name: Looping Motion
     collapsed: 0
   - name: Wavy Motion
     collapsed: 1
-  - name: Looping Motion
-    collapsed: 1
   - name: Lightning Trails
-    collapsed: 0
+    collapsed: 1
   uiBounds:
     serializedVersion: 2
     x: 1251
@@ -1144,7 +1144,7 @@ MonoBehaviour:
   m_UIPosition: {x: 0, y: 0}
   m_UICollapsed: 1
   m_UISuperCollapsed: 0
-  title: Wind Particles
+  title: Lightning Strikes
   m_Owners:
   - {fileID: 8926484042661614546}
   - {fileID: 8926484042661614586}
@@ -4015,7 +4015,7 @@ MonoBehaviour:
   m_UIPosition: {x: 0, y: 0}
   m_UICollapsed: 1
   m_UISuperCollapsed: 0
-  title: Wind Trails
+  title: Lightning Trails
   m_Owners:
   - {fileID: 8926484042661614647}
   - {fileID: 8926484042661614673}
