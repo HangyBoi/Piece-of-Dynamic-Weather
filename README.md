@@ -4,7 +4,7 @@
 
 This repository contains a portfolio project demonstrating the creation of a dynamic, real-time weather system in Unity. The project's centerpiece is a stylized tornado, complemented by a full suite of atmospheric effects including wind, rain, and lightning. The entire system is driven by Unity's Visual Effect Graph and orchestrated by a central C# controller, allowing for smooth transitions from calm conditions to a full-blown storm.
 
-**For a detailed, step-by-step breakdown of the project's development and learning outcomes, please visit the [Wiki Page](https://github.com/HangyBoi/Piece-of-Dynamic-Weather/wiki).**
+### ☆ [View the Full Project Process and Outcomes on the Wiki](https://github.com/HangyBoi/Piece-of-Dynamic-Weather/wiki) ☆
 
 ---
 
