@@ -569,7 +569,7 @@ MonoBehaviour:
   - name: Tornado Top Ring 01 Settings
     collapsed: 1
   - name: Tornado Top Ring 02 Settings
-    collapsed: 0
+    collapsed: 1
   uiBounds:
     serializedVersion: 2
     x: -50
@@ -739,7 +739,7 @@ MonoBehaviour:
       m_Type:
         m_SerializableType: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
           PublicKeyToken=b77a5c561934e089
-      m_SerializableObject: 2
+      m_SerializableObject: 5
     min: -Infinity
     max: Infinity
     enumValues: []
@@ -823,8 +823,8 @@ MonoBehaviour:
     max: 1
     enumValues: []
     descendantCount: 0
-  - name: Core Scale
-    path: Core Scale
+  - name: Core Scale XYZ
+    path: Core Scale XYZ
     tooltip: 
     space: -1
     spaceable: 0
@@ -834,7 +834,7 @@ MonoBehaviour:
       m_Type:
         m_SerializableType: UnityEngine.Vector3, UnityEngine.CoreModule, Version=0.0.0.0,
           Culture=neutral, PublicKeyToken=null
-      m_SerializableObject: '{"x":1.0,"y":1.0,"z":0.75}'
+      m_SerializableObject: '{"x":3.0,"y":3.0,"z":2.5}'
     min: -Infinity
     max: Infinity
     enumValues: []
@@ -887,22 +887,6 @@ MonoBehaviour:
     max: 3
     enumValues: []
     descendantCount: 0
-  - name: Core Shear Noise Scale
-    path: Core Shear Noise Scale
-    tooltip: 
-    space: -1
-    spaceable: 0
-    sheetType: m_Float
-    realType: Single
-    defaultValue:
-      m_Type:
-        m_SerializableType: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
-          PublicKeyToken=b77a5c561934e089
-      m_SerializableObject: 20
-    min: -Infinity
-    max: Infinity
-    enumValues: []
-    descendantCount: 0
   - name: Core Shear Speed
     path: Core Shear Speed
     tooltip: 
@@ -915,54 +899,6 @@ MonoBehaviour:
         m_SerializableType: UnityEngine.Vector2, UnityEngine.CoreModule, Version=0.0.0.0,
           Culture=neutral, PublicKeyToken=null
       m_SerializableObject: '{"x":0.0,"y":1.0}'
-    min: -Infinity
-    max: Infinity
-    enumValues: []
-    descendantCount: 0
-  - name: Core Shear Amount
-    path: Core Shear Amount
-    tooltip: 
-    space: -1
-    spaceable: 0
-    sheetType: m_Float
-    realType: Single
-    defaultValue:
-      m_Type:
-        m_SerializableType: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
-          PublicKeyToken=b77a5c561934e089
-      m_SerializableObject: 8
-    min: -Infinity
-    max: Infinity
-    enumValues: []
-    descendantCount: 0
-  - name: Core Twirl Noise Scale
-    path: Core Twirl Noise Scale
-    tooltip: 
-    space: -1
-    spaceable: 0
-    sheetType: m_Float
-    realType: Single
-    defaultValue:
-      m_Type:
-        m_SerializableType: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
-          PublicKeyToken=b77a5c561934e089
-      m_SerializableObject: 20
-    min: -Infinity
-    max: Infinity
-    enumValues: []
-    descendantCount: 0
-  - name: Core Twirl Amount
-    path: Core Twirl Amount
-    tooltip: 
-    space: -1
-    spaceable: 0
-    sheetType: m_Float
-    realType: Single
-    defaultValue:
-      m_Type:
-        m_SerializableType: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
-          PublicKeyToken=b77a5c561934e089
-      m_SerializableObject: 8
     min: -Infinity
     max: Infinity
     enumValues: []
@@ -1046,22 +982,6 @@ MonoBehaviour:
     max: Infinity
     enumValues: []
     descendantCount: 0
-  - name: Wobble Amount
-    path: Wobble Amount
-    tooltip: 
-    space: -1
-    spaceable: 0
-    sheetType: m_Float
-    realType: Single
-    defaultValue:
-      m_Type:
-        m_SerializableType: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
-          PublicKeyToken=b77a5c561934e089
-      m_SerializableObject: 0.066
-    min: -Infinity
-    max: Infinity
-    enumValues: []
-    descendantCount: 0
   - name: Scale Animation Curves
     path: 
     tooltip: 
@@ -1140,38 +1060,6 @@ MonoBehaviour:
     max: Infinity
     enumValues: []
     descendantCount: 0
-  - name: L1 Mesh
-    path: L1 Mesh
-    tooltip: 
-    space: -1
-    spaceable: 0
-    sheetType: m_NamedObject
-    realType: Mesh
-    defaultValue:
-      m_Type:
-        m_SerializableType: UnityEngine.Mesh, UnityEngine.CoreModule, Version=0.0.0.0,
-          Culture=neutral, PublicKeyToken=null
-      m_SerializableObject: '{"obj":{"fileID":8845500747307127371,"guid":"b697ddad8ff1a92458ff7c4fb242c574","type":3}}'
-    min: -Infinity
-    max: Infinity
-    enumValues: []
-    descendantCount: 0
-  - name: L1 Noise Texture
-    path: L1 Noise Texture
-    tooltip: 
-    space: -1
-    spaceable: 0
-    sheetType: m_NamedObject
-    realType: Texture2D
-    defaultValue:
-      m_Type:
-        m_SerializableType: UnityEngine.Texture2D, UnityEngine.CoreModule, Version=0.0.0.0,
-          Culture=neutral, PublicKeyToken=null
-      m_SerializableObject: '{"obj":{"fileID":2800000,"guid":"6977623e0f161cb49aa522b4e605ce2e","type":3}}'
-    min: -Infinity
-    max: Infinity
-    enumValues: []
-    descendantCount: 0
   - name: L1 Color
     path: L1 Color
     tooltip: 
@@ -1236,6 +1124,38 @@ MonoBehaviour:
     max: Infinity
     enumValues: []
     descendantCount: 0
+  - name: L1 Mesh
+    path: L1 Mesh
+    tooltip: 
+    space: -1
+    spaceable: 0
+    sheetType: m_NamedObject
+    realType: Mesh
+    defaultValue:
+      m_Type:
+        m_SerializableType: UnityEngine.Mesh, UnityEngine.CoreModule, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+      m_SerializableObject: '{"obj":{"fileID":8845500747307127371,"guid":"b697ddad8ff1a92458ff7c4fb242c574","type":3}}'
+    min: -Infinity
+    max: Infinity
+    enumValues: []
+    descendantCount: 0
+  - name: L1 Noise Texture
+    path: L1 Noise Texture
+    tooltip: 
+    space: -1
+    spaceable: 0
+    sheetType: m_NamedObject
+    realType: Texture2D
+    defaultValue:
+      m_Type:
+        m_SerializableType: UnityEngine.Texture2D, UnityEngine.CoreModule, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+      m_SerializableObject: '{"obj":{"fileID":2800000,"guid":"6977623e0f161cb49aa522b4e605ce2e","type":3}}'
+    min: -Infinity
+    max: Infinity
+    enumValues: []
+    descendantCount: 0
   - name: L1 General Noise Power
     path: L1 General Noise Power
     tooltip: 
@@ -1252,22 +1172,6 @@ MonoBehaviour:
     max: 3
     enumValues: []
     descendantCount: 0
-  - name: L1 Shear Noise Scale
-    path: L1 Shear Noise Scale
-    tooltip: 
-    space: -1
-    spaceable: 0
-    sheetType: m_Float
-    realType: Single
-    defaultValue:
-      m_Type:
-        m_SerializableType: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
-          PublicKeyToken=b77a5c561934e089
-      m_SerializableObject: 20
-    min: -Infinity
-    max: Infinity
-    enumValues: []
-    descendantCount: 0
   - name: L1 Shear Speed
     path: L1 Shear Speed
     tooltip: 
@@ -1280,54 +1184,6 @@ MonoBehaviour:
         m_SerializableType: UnityEngine.Vector2, UnityEngine.CoreModule, Version=0.0.0.0,
           Culture=neutral, PublicKeyToken=null
       m_SerializableObject: '{"x":0.0,"y":0.5}'
-    min: -Infinity
-    max: Infinity
-    enumValues: []
-    descendantCount: 0
-  - name: L1 Shear Amount
-    path: L1 Shear Amount
-    tooltip: 
-    space: -1
-    spaceable: 0
-    sheetType: m_Float
-    realType: Single
-    defaultValue:
-      m_Type:
-        m_SerializableType: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
-          PublicKeyToken=b77a5c561934e089
-      m_SerializableObject: 8
-    min: -Infinity
-    max: Infinity
-    enumValues: []
-    descendantCount: 0
-  - name: L1 Twirl Noise Scale
-    path: L1 Twirl Noise Scale
-    tooltip: 
-    space: -1
-    spaceable: 0
-    sheetType: m_Float
-    realType: Single
-    defaultValue:
-      m_Type:
-        m_SerializableType: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
-          PublicKeyToken=b77a5c561934e089
-      m_SerializableObject: 20
-    min: -Infinity
-    max: Infinity
-    enumValues: []
-    descendantCount: 0
-  - name: L1 Twirl Amount
-    path: L1 Twirl Amount
-    tooltip: 
-    space: -1
-    spaceable: 0
-    sheetType: m_Float
-    realType: Single
-    defaultValue:
-      m_Type:
-        m_SerializableType: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
-          PublicKeyToken=b77a5c561934e089
-      m_SerializableObject: 8
     min: -Infinity
     max: Infinity
     enumValues: []
@@ -1359,6 +1215,54 @@ MonoBehaviour:
       m_Type:
         m_SerializableType: 
       m_SerializableObject: 
+    min: -Infinity
+    max: Infinity
+    enumValues: []
+    descendantCount: 0
+  - name: BR 01 Color
+    path: BR 01 Color
+    tooltip: 
+    space: -1
+    spaceable: 0
+    sheetType: m_Vector4f
+    realType: Color
+    defaultValue:
+      m_Type:
+        m_SerializableType: UnityEngine.Color, UnityEngine.CoreModule, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+      m_SerializableObject: '{"r":0.040094345808029178,"g":0.02326228655874729,"b":0.02326228655874729,"a":0.0}'
+    min: -Infinity
+    max: Infinity
+    enumValues: []
+    descendantCount: 0
+  - name: BR 01 Dissolve
+    path: BR 01 Dissolve
+    tooltip: 
+    space: -1
+    spaceable: 0
+    sheetType: m_Float
+    realType: Single
+    defaultValue:
+      m_Type:
+        m_SerializableType: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
+          PublicKeyToken=b77a5c561934e089
+      m_SerializableObject: 0.5
+    min: 0
+    max: 1
+    enumValues: []
+    descendantCount: 0
+  - name: BR 01 Scale XYZ
+    path: BR 01 Scale XYZ
+    tooltip: 
+    space: -1
+    spaceable: 0
+    sheetType: m_Vector3f
+    realType: Vector3
+    defaultValue:
+      m_Type:
+        m_SerializableType: UnityEngine.Vector3, UnityEngine.CoreModule, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+      m_SerializableObject: '{"x":3.5,"y":3.5,"z":3.5}'
     min: -Infinity
     max: Infinity
     enumValues: []
@@ -1395,38 +1299,6 @@ MonoBehaviour:
     max: Infinity
     enumValues: []
     descendantCount: 0
-  - name: BR 01 Color
-    path: BR 01 Color
-    tooltip: 
-    space: -1
-    spaceable: 0
-    sheetType: m_Vector4f
-    realType: Color
-    defaultValue:
-      m_Type:
-        m_SerializableType: UnityEngine.Color, UnityEngine.CoreModule, Version=0.0.0.0,
-          Culture=neutral, PublicKeyToken=null
-      m_SerializableObject: '{"r":0.040094345808029178,"g":0.02326228655874729,"b":0.02326228655874729,"a":0.0}'
-    min: -Infinity
-    max: Infinity
-    enumValues: []
-    descendantCount: 0
-  - name: BR 01 Scale
-    path: BR 01 Scale
-    tooltip: 
-    space: -1
-    spaceable: 0
-    sheetType: m_Vector3f
-    realType: Vector3
-    defaultValue:
-      m_Type:
-        m_SerializableType: UnityEngine.Vector3, UnityEngine.CoreModule, Version=0.0.0.0,
-          Culture=neutral, PublicKeyToken=null
-      m_SerializableObject: '{"x":1.0,"y":1.0,"z":1.25}'
-    min: -Infinity
-    max: Infinity
-    enumValues: []
-    descendantCount: 0
   - name: BR 01 General Noise Power
     path: BR 01 General Noise Power
     tooltip: 
@@ -1439,22 +1311,6 @@ MonoBehaviour:
         m_SerializableType: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
           PublicKeyToken=b77a5c561934e089
       m_SerializableObject: 0
-    min: -Infinity
-    max: Infinity
-    enumValues: []
-    descendantCount: 0
-  - name: BR 01 Shear Noise Scale
-    path: BR 01 Shear Noise Scale
-    tooltip: 
-    space: -1
-    spaceable: 0
-    sheetType: m_Float
-    realType: Single
-    defaultValue:
-      m_Type:
-        m_SerializableType: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
-          PublicKeyToken=b77a5c561934e089
-      m_SerializableObject: 20
     min: -Infinity
     max: Infinity
     enumValues: []
@@ -1475,54 +1331,6 @@ MonoBehaviour:
     max: Infinity
     enumValues: []
     descendantCount: 0
-  - name: BR 01 Shear Amount
-    path: BR 01 Shear Amount
-    tooltip: 
-    space: -1
-    spaceable: 0
-    sheetType: m_Float
-    realType: Single
-    defaultValue:
-      m_Type:
-        m_SerializableType: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
-          PublicKeyToken=b77a5c561934e089
-      m_SerializableObject: 1
-    min: -Infinity
-    max: Infinity
-    enumValues: []
-    descendantCount: 0
-  - name: BR 01 Twirl Noise Scale
-    path: BR 01 Twirl Noise Scale
-    tooltip: 
-    space: -1
-    spaceable: 0
-    sheetType: m_Float
-    realType: Single
-    defaultValue:
-      m_Type:
-        m_SerializableType: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
-          PublicKeyToken=b77a5c561934e089
-      m_SerializableObject: 20
-    min: -Infinity
-    max: Infinity
-    enumValues: []
-    descendantCount: 0
-  - name: BR 01 Twirl Amount
-    path: BR 01 Twirl Amount
-    tooltip: 
-    space: -1
-    spaceable: 0
-    sheetType: m_Float
-    realType: Single
-    defaultValue:
-      m_Type:
-        m_SerializableType: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
-          PublicKeyToken=b77a5c561934e089
-      m_SerializableObject: 0
-    min: -Infinity
-    max: Infinity
-    enumValues: []
-    descendantCount: 0
   - name: BR 01 Twirl Speed
     path: BR 01 Twirl Speed
     tooltip: 
@@ -1539,22 +1347,6 @@ MonoBehaviour:
     max: Infinity
     enumValues: []
     descendantCount: 0
-  - name: BR 01 Dissolve
-    path: BR 01 Dissolve
-    tooltip: 
-    space: -1
-    spaceable: 0
-    sheetType: m_Float
-    realType: Single
-    defaultValue:
-      m_Type:
-        m_SerializableType: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
-          PublicKeyToken=b77a5c561934e089
-      m_SerializableObject: 0.5
-    min: 0
-    max: 1
-    enumValues: []
-    descendantCount: 0
   - name: Tornado Top Ring 01 Settings
     path: 
     tooltip: 
@@ -1566,38 +1358,6 @@ MonoBehaviour:
       m_Type:
         m_SerializableType: 
       m_SerializableObject: 
-    min: -Infinity
-    max: Infinity
-    enumValues: []
-    descendantCount: 0
-  - name: TR 01 Mesh
-    path: TR 01 Mesh
-    tooltip: 
-    space: -1
-    spaceable: 0
-    sheetType: m_NamedObject
-    realType: Mesh
-    defaultValue:
-      m_Type:
-        m_SerializableType: UnityEngine.Mesh, UnityEngine.CoreModule, Version=0.0.0.0,
-          Culture=neutral, PublicKeyToken=null
-      m_SerializableObject: '{"obj":{"fileID":-6059281553040823171,"guid":"b697ddad8ff1a92458ff7c4fb242c574","type":3}}'
-    min: -Infinity
-    max: Infinity
-    enumValues: []
-    descendantCount: 0
-  - name: TR 01 Position
-    path: TR 01 Position
-    tooltip: 
-    space: -1
-    spaceable: 0
-    sheetType: m_Vector3f
-    realType: Vector3
-    defaultValue:
-      m_Type:
-        m_SerializableType: UnityEngine.Vector3, UnityEngine.CoreModule, Version=0.0.0.0,
-          Culture=neutral, PublicKeyToken=null
-      m_SerializableObject: '{"x":0.0,"y":8.0,"z":0.0}'
     min: -Infinity
     max: Infinity
     enumValues: []
@@ -1618,22 +1378,6 @@ MonoBehaviour:
     max: Infinity
     enumValues: []
     descendantCount: 0
-  - name: TR 01 Texture
-    path: TR 01 Texture
-    tooltip: 
-    space: -1
-    spaceable: 0
-    sheetType: m_NamedObject
-    realType: Texture2D
-    defaultValue:
-      m_Type:
-        m_SerializableType: UnityEngine.Texture2D, UnityEngine.CoreModule, Version=0.0.0.0,
-          Culture=neutral, PublicKeyToken=null
-      m_SerializableObject: '{"obj":{"fileID":2800000,"guid":"6977623e0f161cb49aa522b4e605ce2e","type":3}}'
-    min: -Infinity
-    max: Infinity
-    enumValues: []
-    descendantCount: 0
   - name: TR 01 Dissolve
     path: TR 01 Dissolve
     tooltip: 
@@ -1648,6 +1392,70 @@ MonoBehaviour:
       m_SerializableObject: 0.5
     min: 0
     max: 1
+    enumValues: []
+    descendantCount: 0
+  - name: TR 01 Scale XYZ
+    path: TR 01 Scale XYZ
+    tooltip: 
+    space: -1
+    spaceable: 0
+    sheetType: m_Vector3f
+    realType: Vector3
+    defaultValue:
+      m_Type:
+        m_SerializableType: UnityEngine.Vector3, UnityEngine.CoreModule, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+      m_SerializableObject: '{"x":2.25,"y":2.25,"z":2.25}'
+    min: -Infinity
+    max: Infinity
+    enumValues: []
+    descendantCount: 0
+  - name: TR 01 Position
+    path: TR 01 Position
+    tooltip: 
+    space: -1
+    spaceable: 0
+    sheetType: m_Vector3f
+    realType: Vector3
+    defaultValue:
+      m_Type:
+        m_SerializableType: UnityEngine.Vector3, UnityEngine.CoreModule, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+      m_SerializableObject: '{"x":0.0,"y":27.0,"z":0.0}'
+    min: -Infinity
+    max: Infinity
+    enumValues: []
+    descendantCount: 0
+  - name: TR 01 Mesh
+    path: TR 01 Mesh
+    tooltip: 
+    space: -1
+    spaceable: 0
+    sheetType: m_NamedObject
+    realType: Mesh
+    defaultValue:
+      m_Type:
+        m_SerializableType: UnityEngine.Mesh, UnityEngine.CoreModule, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+      m_SerializableObject: '{"obj":{"fileID":-6059281553040823171,"guid":"b697ddad8ff1a92458ff7c4fb242c574","type":3}}'
+    min: -Infinity
+    max: Infinity
+    enumValues: []
+    descendantCount: 0
+  - name: TR 01 Texture
+    path: TR 01 Texture
+    tooltip: 
+    space: -1
+    spaceable: 0
+    sheetType: m_NamedObject
+    realType: Texture2D
+    defaultValue:
+      m_Type:
+        m_SerializableType: UnityEngine.Texture2D, UnityEngine.CoreModule, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+      m_SerializableObject: '{"obj":{"fileID":2800000,"guid":"6977623e0f161cb49aa522b4e605ce2e","type":3}}'
+    min: -Infinity
+    max: Infinity
     enumValues: []
     descendantCount: 0
   - name: TR 01 General Noise Power
@@ -1666,22 +1474,6 @@ MonoBehaviour:
     max: 3
     enumValues: []
     descendantCount: 0
-  - name: TR 01 Shear Noise Scale
-    path: TR 01 Shear Noise Scale
-    tooltip: 
-    space: -1
-    spaceable: 0
-    sheetType: m_Float
-    realType: Single
-    defaultValue:
-      m_Type:
-        m_SerializableType: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
-          PublicKeyToken=b77a5c561934e089
-      m_SerializableObject: 20
-    min: -Infinity
-    max: Infinity
-    enumValues: []
-    descendantCount: 0
   - name: TR 01 Shear Speed
     path: TR 01 Shear Speed
     tooltip: 
@@ -1694,54 +1486,6 @@ MonoBehaviour:
         m_SerializableType: UnityEngine.Vector2, UnityEngine.CoreModule, Version=0.0.0.0,
           Culture=neutral, PublicKeyToken=null
       m_SerializableObject: '{"x":0.0,"y":0.5}'
-    min: -Infinity
-    max: Infinity
-    enumValues: []
-    descendantCount: 0
-  - name: TR 01 Shear Amount
-    path: TR 01 Shear Amount
-    tooltip: 
-    space: -1
-    spaceable: 0
-    sheetType: m_Float
-    realType: Single
-    defaultValue:
-      m_Type:
-        m_SerializableType: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
-          PublicKeyToken=b77a5c561934e089
-      m_SerializableObject: 1
-    min: -Infinity
-    max: Infinity
-    enumValues: []
-    descendantCount: 0
-  - name: TR 01 Twirl Noise Scale
-    path: TR 01 Twirl Noise Scale
-    tooltip: 
-    space: -1
-    spaceable: 0
-    sheetType: m_Float
-    realType: Single
-    defaultValue:
-      m_Type:
-        m_SerializableType: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
-          PublicKeyToken=b77a5c561934e089
-      m_SerializableObject: 20
-    min: -Infinity
-    max: Infinity
-    enumValues: []
-    descendantCount: 0
-  - name: TR 01 Twirl Amount
-    path: TR 01 Twirl Amount
-    tooltip: 
-    space: -1
-    spaceable: 0
-    sheetType: m_Float
-    realType: Single
-    defaultValue:
-      m_Type:
-        m_SerializableType: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
-          PublicKeyToken=b77a5c561934e089
-      m_SerializableObject: 0.5
     min: -Infinity
     max: Infinity
     enumValues: []
@@ -1762,22 +1506,6 @@ MonoBehaviour:
     max: Infinity
     enumValues: []
     descendantCount: 0
-  - name: TR 01 Scale XYZ
-    path: TR 01 Scale XYZ
-    tooltip: 
-    space: -1
-    spaceable: 0
-    sheetType: m_Vector3f
-    realType: Vector3
-    defaultValue:
-      m_Type:
-        m_SerializableType: UnityEngine.Vector3, UnityEngine.CoreModule, Version=0.0.0.0,
-          Culture=neutral, PublicKeyToken=null
-      m_SerializableObject: '{"x":1.0,"y":1.0,"z":0.75}'
-    min: -Infinity
-    max: Infinity
-    enumValues: []
-    descendantCount: 0
   - name: Tornado Top Ring 02 Settings
     path: 
     tooltip: 
@@ -1789,22 +1517,6 @@ MonoBehaviour:
       m_Type:
         m_SerializableType: 
       m_SerializableObject: 
-    min: -Infinity
-    max: Infinity
-    enumValues: []
-    descendantCount: 0
-  - name: TR 02 Position
-    path: TR 02 Position
-    tooltip: 
-    space: -1
-    spaceable: 0
-    sheetType: m_Vector3f
-    realType: Vector3
-    defaultValue:
-      m_Type:
-        m_SerializableType: UnityEngine.Vector3, UnityEngine.CoreModule, Version=0.0.0.0,
-          Culture=neutral, PublicKeyToken=null
-      m_SerializableObject: '{"x":0.0,"y":8.0,"z":0.0}'
     min: -Infinity
     max: Infinity
     enumValues: []
@@ -1821,6 +1533,54 @@ MonoBehaviour:
         m_SerializableType: UnityEngine.Color, UnityEngine.CoreModule, Version=0.0.0.0,
           Culture=neutral, PublicKeyToken=null
       m_SerializableObject: '{"r":0.06294186413288117,"g":0.028880387544631959,"b":0.10377359390258789,"a":0.0}'
+    min: -Infinity
+    max: Infinity
+    enumValues: []
+    descendantCount: 0
+  - name: TR 02 Dissolve
+    path: TR 02 Dissolve
+    tooltip: 
+    space: -1
+    spaceable: 0
+    sheetType: m_Float
+    realType: Single
+    defaultValue:
+      m_Type:
+        m_SerializableType: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
+          PublicKeyToken=b77a5c561934e089
+      m_SerializableObject: 0.5
+    min: 0
+    max: 1
+    enumValues: []
+    descendantCount: 0
+  - name: TR 02 Scale XYZ
+    path: TR 02 Scale XYZ
+    tooltip: 
+    space: -1
+    spaceable: 0
+    sheetType: m_Vector3f
+    realType: Vector3
+    defaultValue:
+      m_Type:
+        m_SerializableType: UnityEngine.Vector3, UnityEngine.CoreModule, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+      m_SerializableObject: '{"x":5.0,"y":5.0,"z":2.0}'
+    min: -Infinity
+    max: Infinity
+    enumValues: []
+    descendantCount: 0
+  - name: TR 02 Position
+    path: TR 02 Position
+    tooltip: 
+    space: -1
+    spaceable: 0
+    sheetType: m_Vector3f
+    realType: Vector3
+    defaultValue:
+      m_Type:
+        m_SerializableType: UnityEngine.Vector3, UnityEngine.CoreModule, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+      m_SerializableObject: '{"x":0.0,"y":27.0,"z":0.0}'
     min: -Infinity
     max: Infinity
     enumValues: []
@@ -1857,22 +1617,6 @@ MonoBehaviour:
     max: Infinity
     enumValues: []
     descendantCount: 0
-  - name: TR 02 Dissolve
-    path: TR 02 Dissolve
-    tooltip: 
-    space: -1
-    spaceable: 0
-    sheetType: m_Float
-    realType: Single
-    defaultValue:
-      m_Type:
-        m_SerializableType: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
-          PublicKeyToken=b77a5c561934e089
-      m_SerializableObject: 0.5
-    min: 0
-    max: 1
-    enumValues: []
-    descendantCount: 0
   - name: TR 02 General Noise Power
     path: TR 02 General Noise Power
     tooltip: 
@@ -1887,22 +1631,6 @@ MonoBehaviour:
       m_SerializableObject: 0.5
     min: 0
     max: 3
-    enumValues: []
-    descendantCount: 0
-  - name: TR 02 Shear Noise Scale
-    path: TR 02 Shear Noise Scale
-    tooltip: 
-    space: -1
-    spaceable: 0
-    sheetType: m_Float
-    realType: Single
-    defaultValue:
-      m_Type:
-        m_SerializableType: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
-          PublicKeyToken=b77a5c561934e089
-      m_SerializableObject: 20
-    min: -Infinity
-    max: Infinity
     enumValues: []
     descendantCount: 0
   - name: TR 02 Shear Speed
@@ -1921,54 +1649,6 @@ MonoBehaviour:
     max: Infinity
     enumValues: []
     descendantCount: 0
-  - name: TR 02 Shear Amount
-    path: TR 02 Shear Amount
-    tooltip: 
-    space: -1
-    spaceable: 0
-    sheetType: m_Float
-    realType: Single
-    defaultValue:
-      m_Type:
-        m_SerializableType: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
-          PublicKeyToken=b77a5c561934e089
-      m_SerializableObject: 1
-    min: -Infinity
-    max: Infinity
-    enumValues: []
-    descendantCount: 0
-  - name: TR 02 Twirl Noise Scale
-    path: TR 02 Twirl Noise Scale
-    tooltip: 
-    space: -1
-    spaceable: 0
-    sheetType: m_Float
-    realType: Single
-    defaultValue:
-      m_Type:
-        m_SerializableType: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
-          PublicKeyToken=b77a5c561934e089
-      m_SerializableObject: 20
-    min: -Infinity
-    max: Infinity
-    enumValues: []
-    descendantCount: 0
-  - name: TR 02 Twirl Amount
-    path: TR 02 Twirl Amount
-    tooltip: 
-    space: -1
-    spaceable: 0
-    sheetType: m_Float
-    realType: Single
-    defaultValue:
-      m_Type:
-        m_SerializableType: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
-          PublicKeyToken=b77a5c561934e089
-      m_SerializableObject: 0.5
-    min: -Infinity
-    max: Infinity
-    enumValues: []
-    descendantCount: 0
   - name: TR 02 Twirl Speed
     path: TR 02 Twirl Speed
     tooltip: 
@@ -1981,22 +1661,6 @@ MonoBehaviour:
         m_SerializableType: UnityEngine.Vector2, UnityEngine.CoreModule, Version=0.0.0.0,
           Culture=neutral, PublicKeyToken=null
       m_SerializableObject: '{"x":-1.0,"y":-0.5}'
-    min: -Infinity
-    max: Infinity
-    enumValues: []
-    descendantCount: 0
-  - name: TR 02 Scale XYZ
-    path: TR 02 Scale XYZ
-    tooltip: 
-    space: -1
-    spaceable: 0
-    sheetType: m_Vector3f
-    realType: Vector3
-    defaultValue:
-      m_Type:
-        m_SerializableType: UnityEngine.Vector3, UnityEngine.CoreModule, Version=0.0.0.0,
-          Culture=neutral, PublicKeyToken=null
-      m_SerializableObject: '{"x":5.0,"y":5.0,"z":2.0}'
     min: -Infinity
     max: Infinity
     enumValues: []
@@ -2884,7 +2548,7 @@ MonoBehaviour:
       m_Type:
         m_SerializableType: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
           PublicKeyToken=b77a5c561934e089
-      m_SerializableObject: 2
+      m_SerializableObject: 5
     m_Space: -1
   m_Property:
     name: o
@@ -3918,7 +3582,7 @@ MonoBehaviour:
   - {fileID: 8926484042661614626}
   m_ExposedName: Core Color
   m_Exposed: 1
-  m_Order: 20
+  m_Order: 53
   m_Category: Tornado Core Settings
   m_Min:
     m_Type:
@@ -4133,9 +3797,9 @@ MonoBehaviour:
   m_InputSlots: []
   m_OutputSlots:
   - {fileID: 8926484042661614638}
-  m_ExposedName: Core Scale
+  m_ExposedName: Core Scale XYZ
   m_Exposed: 1
-  m_Order: 34
+  m_Order: 59
   m_Category: Tornado Core Settings
   m_Min:
     m_Type:
@@ -4199,7 +3863,7 @@ MonoBehaviour:
       m_Type:
         m_SerializableType: UnityEngine.Vector3, UnityEngine.CoreModule, Version=0.0.0.0,
           Culture=neutral, PublicKeyToken=null
-      m_SerializableObject: '{"x":1.0,"y":1.0,"z":0.75}'
+      m_SerializableObject: '{"x":3.0,"y":3.0,"z":2.5}'
     m_Space: -1
   m_Property:
     name: o
@@ -4505,7 +4169,7 @@ MonoBehaviour:
   - {fileID: 8926484042661614648}
   m_ExposedName: ScaleOverLifeX
   m_Exposed: 1
-  m_Order: 35
+  m_Order: 60
   m_Category: Scale Animation Curves
   m_Min:
     m_Type:
@@ -4622,7 +4286,7 @@ MonoBehaviour:
   - {fileID: 8926484042661614650}
   m_ExposedName: ScaleOverLifeY
   m_Exposed: 1
-  m_Order: 36
+  m_Order: 61
   m_Category: Scale Animation Curves
   m_Min:
     m_Type:
@@ -4757,7 +4421,7 @@ MonoBehaviour:
   - {fileID: 8926484042661614652}
   m_ExposedName: ScaleOverLifeZ
   m_Exposed: 1
-  m_Order: 37
+  m_Order: 62
   m_Category: Scale Animation Curves
   m_Min:
     m_Type:
@@ -5073,7 +4737,7 @@ MonoBehaviour:
   - {fileID: 8926484042661614660}
   m_ExposedName: Core Dissolve
   m_Exposed: 1
-  m_Order: 27
+  m_Order: 55
   m_Category: Tornado Core Settings
   m_Min:
     m_Type:
@@ -5284,7 +4948,7 @@ MonoBehaviour:
   - {fileID: 8926484042661614666}
   m_ExposedName: Dissolve Curve
   m_Exposed: 1
-  m_Order: 32
+  m_Order: 57
   m_Category: Base Settings
   m_Min:
     m_Type:
@@ -8106,7 +7770,7 @@ MonoBehaviour:
   - {fileID: 8926484042661614838}
   m_ExposedName: L1 Color
   m_Exposed: 1
-  m_Order: 21
+  m_Order: 1
   m_Category: Tornado Layer 1 Settings
   m_Min:
     m_Type:
@@ -8323,7 +7987,7 @@ MonoBehaviour:
   - {fileID: 8926484042661614844}
   m_ExposedName: L1 Dissolve
   m_Exposed: 1
-  m_Order: 24
+  m_Order: 5
   m_Category: Tornado Layer 1 Settings
   m_Min:
     m_Type:
@@ -8543,7 +8207,7 @@ MonoBehaviour:
   - {fileID: 8926484042661614850}
   m_ExposedName: L1 Scale X
   m_Exposed: 1
-  m_Order: 28
+  m_Order: 9
   m_Category: Tornado Layer 1 Settings
   m_Min:
     m_Type:
@@ -8761,7 +8425,7 @@ MonoBehaviour:
   - {fileID: 8926484042661614856}
   m_ExposedName: L1 Scale Y
   m_Exposed: 1
-  m_Order: 30
+  m_Order: 13
   m_Category: Tornado Layer 1 Settings
   m_Min:
     m_Type:
@@ -11770,7 +11434,7 @@ MonoBehaviour:
   - {fileID: 8926484042661614960}
   m_ExposedName: TR 01 Position
   m_Exposed: 1
-  m_Order: 16
+  m_Order: 14
   m_Category: Tornado Top Ring 01 Settings
   m_Min:
     m_Type:
@@ -11821,7 +11485,7 @@ MonoBehaviour:
       m_Type:
         m_SerializableType: UnityEngine.Vector3, UnityEngine.CoreModule, Version=0.0.0.0,
           Culture=neutral, PublicKeyToken=null
-      m_SerializableObject: '{"x":0.0,"y":8.0,"z":0.0}'
+      m_SerializableObject: '{"x":0.0,"y":27.0,"z":0.0}'
     m_Space: -1
   m_Property:
     name: o
@@ -14804,7 +14468,7 @@ MonoBehaviour:
   - {fileID: 8926484042661615083}
   m_ExposedName: TR 01 Color
   m_Exposed: 1
-  m_Order: 22
+  m_Order: 2
   m_Category: Tornado Top Ring 01 Settings
   m_Min:
     m_Type:
@@ -15021,7 +14685,7 @@ MonoBehaviour:
   - {fileID: 8926484042661615089}
   m_ExposedName: BR 01 Color
   m_Exposed: 1
-  m_Order: 23
+  m_Order: 3
   m_Category: Tornado Bottom Ring 01 Settings
   m_Min:
     m_Type:
@@ -15236,9 +14900,9 @@ MonoBehaviour:
   m_InputSlots: []
   m_OutputSlots:
   - {fileID: 8926484042661615095}
-  m_ExposedName: BR 01 Scale
+  m_ExposedName: BR 01 Scale XYZ
   m_Exposed: 1
-  m_Order: 25
+  m_Order: 10
   m_Category: Tornado Bottom Ring 01 Settings
   m_Min:
     m_Type:
@@ -15289,7 +14953,7 @@ MonoBehaviour:
       m_Type:
         m_SerializableType: UnityEngine.Vector3, UnityEngine.CoreModule, Version=0.0.0.0,
           Culture=neutral, PublicKeyToken=null
-      m_SerializableObject: '{"x":1.0,"y":1.0,"z":1.25}'
+      m_SerializableObject: '{"x":3.5,"y":3.5,"z":3.5}'
     m_Space: -1
   m_Property:
     name: o
@@ -15969,7 +15633,7 @@ MonoBehaviour:
   - {fileID: 8926484042661615132}
   m_ExposedName: Wobble Intensity
   m_Exposed: 1
-  m_Order: 17
+  m_Order: 52
   m_Category: Wobble Animation Settings
   m_Min:
     m_Type:
@@ -16052,7 +15716,7 @@ MonoBehaviour:
   - {fileID: 8926484042661615134}
   m_ExposedName: Wobble Speed
   m_Exposed: 1
-  m_Order: 26
+  m_Order: 54
   m_Category: Wobble Animation Settings
   m_Min:
     m_Type:
@@ -16133,7 +15797,7 @@ MonoBehaviour:
   - {fileID: 8926484042661615136}
   m_ExposedName: Wobble Frequency
   m_Exposed: 1
-  m_Order: 31
+  m_Order: 56
   m_Category: Wobble Animation Settings
   m_Min:
     m_Type:
@@ -16213,8 +15877,8 @@ MonoBehaviour:
   m_OutputSlots:
   - {fileID: 8926484042661615138}
   m_ExposedName: Wobble Amount
-  m_Exposed: 1
-  m_Order: 33
+  m_Exposed: 0
+  m_Order: 58
   m_Category: Wobble Animation Settings
   m_Min:
     m_Type:
@@ -21390,7 +21054,7 @@ MonoBehaviour:
   - {fileID: 8926484042661615400}
   m_ExposedName: Use Procedural Texture
   m_Exposed: 1
-  m_Order: 38
+  m_Order: 63
   m_Category: Base Settings
   m_Min:
     m_Type:
@@ -21507,7 +21171,7 @@ MonoBehaviour:
   - {fileID: 8926484042661615402}
   m_ExposedName: Core Mesh
   m_Exposed: 1
-  m_Order: 39
+  m_Order: 64
   m_Category: Tornado Core Settings
   m_Min:
     m_Type:
@@ -21588,7 +21252,7 @@ MonoBehaviour:
   - {fileID: 8926484042661615404}
   m_ExposedName: Core Noise Texture
   m_Exposed: 1
-  m_Order: 40
+  m_Order: 65
   m_Category: Tornado Core Settings
   m_Min:
     m_Type:
@@ -21669,7 +21333,7 @@ MonoBehaviour:
   - {fileID: 8926484042661615406}
   m_ExposedName: Core General Noise Power
   m_Exposed: 1
-  m_Order: 41
+  m_Order: 66
   m_Category: Tornado Core Settings
   m_Min:
     m_Type:
@@ -21751,8 +21415,8 @@ MonoBehaviour:
   m_OutputSlots:
   - {fileID: 8926484042661615413}
   m_ExposedName: Core Shear Noise Scale
-  m_Exposed: 1
-  m_Order: 42
+  m_Exposed: 0
+  m_Order: 67
   m_Category: Tornado Core Settings
   m_Min:
     m_Type:
@@ -21833,7 +21497,7 @@ MonoBehaviour:
   - {fileID: 8926484042661615415}
   m_ExposedName: Core Shear Speed
   m_Exposed: 1
-  m_Order: 43
+  m_Order: 68
   m_Category: Tornado Core Settings
   m_Min:
     m_Type:
@@ -21981,8 +21645,8 @@ MonoBehaviour:
   m_OutputSlots:
   - {fileID: 8926484042661615419}
   m_ExposedName: Core Shear Amount
-  m_Exposed: 1
-  m_Order: 44
+  m_Exposed: 0
+  m_Order: 69
   m_Category: Tornado Core Settings
   m_Min:
     m_Type:
@@ -22062,8 +21726,8 @@ MonoBehaviour:
   m_OutputSlots:
   - {fileID: 8926484042661615421}
   m_ExposedName: Core Twirl Noise Scale
-  m_Exposed: 1
-  m_Order: 45
+  m_Exposed: 0
+  m_Order: 70
   m_Category: Tornado Core Settings
   m_Min:
     m_Type:
@@ -22143,8 +21807,8 @@ MonoBehaviour:
   m_OutputSlots:
   - {fileID: 8926484042661615423}
   m_ExposedName: Core Twirl Amount
-  m_Exposed: 1
-  m_Order: 46
+  m_Exposed: 0
+  m_Order: 71
   m_Category: Tornado Core Settings
   m_Min:
     m_Type:
@@ -22225,7 +21889,7 @@ MonoBehaviour:
   - {fileID: 8926484042661615425}
   m_ExposedName: L1 Mesh
   m_Exposed: 1
-  m_Order: 1
+  m_Order: 17
   m_Category: Tornado Layer 1 Settings
   m_Min:
     m_Type:
@@ -22306,7 +21970,7 @@ MonoBehaviour:
   - {fileID: 8926484042661615427}
   m_ExposedName: L1 Noise Texture
   m_Exposed: 1
-  m_Order: 18
+  m_Order: 21
   m_Category: Tornado Layer 1 Settings
   m_Min:
     m_Type:
@@ -22387,7 +22051,7 @@ MonoBehaviour:
   - {fileID: 8926484042661615429}
   m_ExposedName: Core Twirl Speed
   m_Exposed: 1
-  m_Order: 47
+  m_Order: 72
   m_Category: Tornado Core Settings
   m_Min:
     m_Type:
@@ -22536,7 +22200,7 @@ MonoBehaviour:
   - {fileID: 8926484042661615433}
   m_ExposedName: L1 General Noise Power
   m_Exposed: 1
-  m_Order: 48
+  m_Order: 25
   m_Category: Tornado Layer 1 Settings
   m_Min:
     m_Type:
@@ -22618,8 +22282,8 @@ MonoBehaviour:
   m_OutputSlots:
   - {fileID: 8926484042661615435}
   m_ExposedName: L1 Shear Noise Scale
-  m_Exposed: 1
-  m_Order: 49
+  m_Exposed: 0
+  m_Order: 29
   m_Category: Tornado Layer 1 Settings
   m_Min:
     m_Type:
@@ -22700,7 +22364,7 @@ MonoBehaviour:
   - {fileID: 8926484042661615437}
   m_ExposedName: L1 Shear Speed
   m_Exposed: 1
-  m_Order: 50
+  m_Order: 33
   m_Category: Tornado Layer 1 Settings
   m_Min:
     m_Type:
@@ -22848,8 +22512,8 @@ MonoBehaviour:
   m_OutputSlots:
   - {fileID: 8926484042661615441}
   m_ExposedName: L1 Shear Amount
-  m_Exposed: 1
-  m_Order: 51
+  m_Exposed: 0
+  m_Order: 37
   m_Category: Tornado Layer 1 Settings
   m_Min:
     m_Type:
@@ -22929,8 +22593,8 @@ MonoBehaviour:
   m_OutputSlots:
   - {fileID: 8926484042661615443}
   m_ExposedName: L1 Twirl Noise Scale
-  m_Exposed: 1
-  m_Order: 52
+  m_Exposed: 0
+  m_Order: 41
   m_Category: Tornado Layer 1 Settings
   m_Min:
     m_Type:
@@ -23010,8 +22674,8 @@ MonoBehaviour:
   m_OutputSlots:
   - {fileID: 8926484042661615445}
   m_ExposedName: L1 Twirl Amount
-  m_Exposed: 1
-  m_Order: 53
+  m_Exposed: 0
+  m_Order: 45
   m_Category: Tornado Layer 1 Settings
   m_Min:
     m_Type:
@@ -23092,7 +22756,7 @@ MonoBehaviour:
   - {fileID: 8926484042661615447}
   m_ExposedName: L1 Twirl Speed
   m_Exposed: 1
-  m_Order: 54
+  m_Order: 49
   m_Category: Tornado Layer 1 Settings
   m_Min:
     m_Type:
@@ -23241,7 +22905,7 @@ MonoBehaviour:
   - {fileID: 8926484042661615451}
   m_ExposedName: BR 01 Mesh
   m_Exposed: 1
-  m_Order: 2
+  m_Order: 15
   m_Category: Tornado Bottom Ring 01 Settings
   m_Min:
     m_Type:
@@ -23322,7 +22986,7 @@ MonoBehaviour:
   - {fileID: 8926484042661615453}
   m_ExposedName: BR 01 Texture
   m_Exposed: 1
-  m_Order: 19
+  m_Order: 18
   m_Category: Tornado Bottom Ring 01 Settings
   m_Min:
     m_Type:
@@ -23403,7 +23067,7 @@ MonoBehaviour:
   - {fileID: 8926484042661615455}
   m_ExposedName: BR 01 General Noise Power
   m_Exposed: 1
-  m_Order: 29
+  m_Order: 22
   m_Category: Tornado Bottom Ring 01 Settings
   m_Min:
     m_Type:
@@ -23483,8 +23147,8 @@ MonoBehaviour:
   m_OutputSlots:
   - {fileID: 8926484042661615457}
   m_ExposedName: BR 01 Shear Noise Scale
-  m_Exposed: 1
-  m_Order: 55
+  m_Exposed: 0
+  m_Order: 26
   m_Category: Tornado Bottom Ring 01 Settings
   m_Min:
     m_Type:
@@ -23565,7 +23229,7 @@ MonoBehaviour:
   - {fileID: 8926484042661615459}
   m_ExposedName: BR 01 Shear Speed
   m_Exposed: 1
-  m_Order: 56
+  m_Order: 30
   m_Category: Tornado Bottom Ring 01 Settings
   m_Min:
     m_Type:
@@ -23713,8 +23377,8 @@ MonoBehaviour:
   m_OutputSlots:
   - {fileID: 8926484042661615463}
   m_ExposedName: BR 01 Shear Amount
-  m_Exposed: 1
-  m_Order: 57
+  m_Exposed: 0
+  m_Order: 34
   m_Category: Tornado Bottom Ring 01 Settings
   m_Min:
     m_Type:
@@ -23762,7 +23426,7 @@ MonoBehaviour:
       m_Type:
         m_SerializableType: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
           PublicKeyToken=b77a5c561934e089
-      m_SerializableObject: 1
+      m_SerializableObject: 8
     m_Space: -1
   m_Property:
     name: o
@@ -23794,8 +23458,8 @@ MonoBehaviour:
   m_OutputSlots:
   - {fileID: 8926484042661615465}
   m_ExposedName: BR 01 Twirl Noise Scale
-  m_Exposed: 1
-  m_Order: 58
+  m_Exposed: 0
+  m_Order: 38
   m_Category: Tornado Bottom Ring 01 Settings
   m_Min:
     m_Type:
@@ -23869,14 +23533,14 @@ MonoBehaviour:
   m_Parent: {fileID: 114350483966674976}
   m_Children: []
   m_UIPosition: {x: 0, y: 0}
-  m_UICollapsed: 1
+  m_UICollapsed: 0
   m_UISuperCollapsed: 0
   m_InputSlots: []
   m_OutputSlots:
   - {fileID: 8926484042661615467}
   m_ExposedName: BR 01 Twirl Amount
-  m_Exposed: 1
-  m_Order: 59
+  m_Exposed: 0
+  m_Order: 42
   m_Category: Tornado Bottom Ring 01 Settings
   m_Min:
     m_Type:
@@ -23924,7 +23588,7 @@ MonoBehaviour:
       m_Type:
         m_SerializableType: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
           PublicKeyToken=b77a5c561934e089
-      m_SerializableObject: 0
+      m_SerializableObject: 8
     m_Space: -1
   m_Property:
     name: o
@@ -23957,7 +23621,7 @@ MonoBehaviour:
   - {fileID: 8926484042661615469}
   m_ExposedName: BR 01 Twirl Speed
   m_Exposed: 1
-  m_Order: 60
+  m_Order: 46
   m_Category: Tornado Bottom Ring 01 Settings
   m_Min:
     m_Type:
@@ -24106,7 +23770,7 @@ MonoBehaviour:
   - {fileID: 8926484042661615475}
   m_ExposedName: TR 01 Mesh
   m_Exposed: 1
-  m_Order: 3
+  m_Order: 19
   m_Category: Tornado Top Ring 01 Settings
   m_Min:
     m_Type:
@@ -24187,7 +23851,7 @@ MonoBehaviour:
   - {fileID: 8926484042661615477}
   m_ExposedName: TR 01 Texture
   m_Exposed: 1
-  m_Order: 61
+  m_Order: 23
   m_Category: Tornado Top Ring 01 Settings
   m_Min:
     m_Type:
@@ -24268,7 +23932,7 @@ MonoBehaviour:
   - {fileID: 8926484042661615479}
   m_ExposedName: BR 01 Dissolve
   m_Exposed: 1
-  m_Order: 62
+  m_Order: 6
   m_Category: Tornado Bottom Ring 01 Settings
   m_Min:
     m_Type:
@@ -24351,7 +24015,7 @@ MonoBehaviour:
   - {fileID: 8926484042661615481}
   m_ExposedName: TR 01 Dissolve
   m_Exposed: 1
-  m_Order: 63
+  m_Order: 7
   m_Category: Tornado Top Ring 01 Settings
   m_Min:
     m_Type:
@@ -24434,7 +24098,7 @@ MonoBehaviour:
   - {fileID: 8926484042661615483}
   m_ExposedName: TR 01 General Noise Power
   m_Exposed: 1
-  m_Order: 64
+  m_Order: 27
   m_Category: Tornado Top Ring 01 Settings
   m_Min:
     m_Type:
@@ -24516,8 +24180,8 @@ MonoBehaviour:
   m_OutputSlots:
   - {fileID: 8926484042661615485}
   m_ExposedName: TR 01 Shear Noise Scale
-  m_Exposed: 1
-  m_Order: 65
+  m_Exposed: 0
+  m_Order: 31
   m_Category: Tornado Top Ring 01 Settings
   m_Min:
     m_Type:
@@ -24598,7 +24262,7 @@ MonoBehaviour:
   - {fileID: 8926484042661615487}
   m_ExposedName: TR 01 Shear Speed
   m_Exposed: 1
-  m_Order: 66
+  m_Order: 35
   m_Category: Tornado Top Ring 01 Settings
   m_Min:
     m_Type:
@@ -24746,8 +24410,8 @@ MonoBehaviour:
   m_OutputSlots:
   - {fileID: 8926484042661615491}
   m_ExposedName: TR 01 Shear Amount
-  m_Exposed: 1
-  m_Order: 67
+  m_Exposed: 0
+  m_Order: 39
   m_Category: Tornado Top Ring 01 Settings
   m_Min:
     m_Type:
@@ -24795,7 +24459,7 @@ MonoBehaviour:
       m_Type:
         m_SerializableType: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
           PublicKeyToken=b77a5c561934e089
-      m_SerializableObject: 1
+      m_SerializableObject: 8
     m_Space: -1
   m_Property:
     name: o
@@ -24827,8 +24491,8 @@ MonoBehaviour:
   m_OutputSlots:
   - {fileID: 8926484042661615493}
   m_ExposedName: TR 01 Twirl Noise Scale
-  m_Exposed: 1
-  m_Order: 68
+  m_Exposed: 0
+  m_Order: 43
   m_Category: Tornado Top Ring 01 Settings
   m_Min:
     m_Type:
@@ -24908,8 +24572,8 @@ MonoBehaviour:
   m_OutputSlots:
   - {fileID: 8926484042661615495}
   m_ExposedName: TR 01 Twirl Amount
-  m_Exposed: 1
-  m_Order: 69
+  m_Exposed: 0
+  m_Order: 47
   m_Category: Tornado Top Ring 01 Settings
   m_Min:
     m_Type:
@@ -24990,7 +24654,7 @@ MonoBehaviour:
   - {fileID: 8926484042661615497}
   m_ExposedName: TR 01 Twirl Speed
   m_Exposed: 1
-  m_Order: 70
+  m_Order: 50
   m_Category: Tornado Top Ring 01 Settings
   m_Min:
     m_Type:
@@ -25139,7 +24803,7 @@ MonoBehaviour:
   - {fileID: 8926484042661615501}
   m_ExposedName: TR 02 Position
   m_Exposed: 1
-  m_Order: 4
+  m_Order: 16
   m_Category: Tornado Top Ring 02 Settings
   m_Min:
     m_Type:
@@ -25190,7 +24854,7 @@ MonoBehaviour:
       m_Type:
         m_SerializableType: UnityEngine.Vector3, UnityEngine.CoreModule, Version=0.0.0.0,
           Culture=neutral, PublicKeyToken=null
-      m_SerializableObject: '{"x":0.0,"y":8.0,"z":0.0}'
+      m_SerializableObject: '{"x":0.0,"y":27.0,"z":0.0}'
     m_Space: -1
   m_Property:
     name: o
@@ -25322,7 +24986,7 @@ MonoBehaviour:
   - {fileID: 8926484042661615506}
   m_ExposedName: TR 02 Color
   m_Exposed: 1
-  m_Order: 5
+  m_Order: 4
   m_Category: Tornado Top Ring 02 Settings
   m_Min:
     m_Type:
@@ -25539,7 +25203,7 @@ MonoBehaviour:
   - {fileID: 8926484042661615512}
   m_ExposedName: TR 02 Mesh
   m_Exposed: 1
-  m_Order: 6
+  m_Order: 20
   m_Category: Tornado Top Ring 02 Settings
   m_Min:
     m_Type:
@@ -25620,7 +25284,7 @@ MonoBehaviour:
   - {fileID: 8926484042661615514}
   m_ExposedName: TR 02 Texture
   m_Exposed: 1
-  m_Order: 7
+  m_Order: 24
   m_Category: Tornado Top Ring 02 Settings
   m_Min:
     m_Type:
@@ -25784,7 +25448,7 @@ MonoBehaviour:
   - {fileID: 8926484042661615518}
   m_ExposedName: TR 02 General Noise Power
   m_Exposed: 1
-  m_Order: 9
+  m_Order: 28
   m_Category: Tornado Top Ring 02 Settings
   m_Min:
     m_Type:
@@ -25866,8 +25530,8 @@ MonoBehaviour:
   m_OutputSlots:
   - {fileID: 8926484042661615520}
   m_ExposedName: TR 02 Shear Noise Scale
-  m_Exposed: 1
-  m_Order: 10
+  m_Exposed: 0
+  m_Order: 32
   m_Category: Tornado Top Ring 02 Settings
   m_Min:
     m_Type:
@@ -25948,7 +25612,7 @@ MonoBehaviour:
   - {fileID: 8926484042661615522}
   m_ExposedName: TR 02 Shear Speed
   m_Exposed: 1
-  m_Order: 11
+  m_Order: 36
   m_Category: Tornado Top Ring 02 Settings
   m_Min:
     m_Type:
@@ -26096,8 +25760,8 @@ MonoBehaviour:
   m_OutputSlots:
   - {fileID: 8926484042661615526}
   m_ExposedName: TR 02 Shear Amount
-  m_Exposed: 1
-  m_Order: 12
+  m_Exposed: 0
+  m_Order: 40
   m_Category: Tornado Top Ring 02 Settings
   m_Min:
     m_Type:
@@ -26145,7 +25809,7 @@ MonoBehaviour:
       m_Type:
         m_SerializableType: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
           PublicKeyToken=b77a5c561934e089
-      m_SerializableObject: 1
+      m_SerializableObject: 8
     m_Space: -1
   m_Property:
     name: o
@@ -26177,8 +25841,8 @@ MonoBehaviour:
   m_OutputSlots:
   - {fileID: 8926484042661615528}
   m_ExposedName: TR 02 Twirl Noise Scale
-  m_Exposed: 1
-  m_Order: 13
+  m_Exposed: 0
+  m_Order: 44
   m_Category: Tornado Top Ring 02 Settings
   m_Min:
     m_Type:
@@ -26258,8 +25922,8 @@ MonoBehaviour:
   m_OutputSlots:
   - {fileID: 8926484042661615530}
   m_ExposedName: TR 02 Twirl Amount
-  m_Exposed: 1
-  m_Order: 14
+  m_Exposed: 0
+  m_Order: 48
   m_Category: Tornado Top Ring 02 Settings
   m_Min:
     m_Type:
@@ -26307,7 +25971,7 @@ MonoBehaviour:
       m_Type:
         m_SerializableType: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
           PublicKeyToken=b77a5c561934e089
-      m_SerializableObject: 0.5
+      m_SerializableObject: 8
     m_Space: -1
   m_Property:
     name: o
@@ -26340,7 +26004,7 @@ MonoBehaviour:
   - {fileID: 8926484042661615532}
   m_ExposedName: TR 02 Twirl Speed
   m_Exposed: 1
-  m_Order: 15
+  m_Order: 51
   m_Category: Tornado Top Ring 02 Settings
   m_Min:
     m_Type:
@@ -26524,7 +26188,7 @@ MonoBehaviour:
   - {fileID: 8926484042661615546}
   m_ExposedName: TR 01 Scale XYZ
   m_Exposed: 1
-  m_Order: 71
+  m_Order: 11
   m_Category: Tornado Top Ring 01 Settings
   m_Min:
     m_Type:
@@ -26575,7 +26239,7 @@ MonoBehaviour:
       m_Type:
         m_SerializableType: UnityEngine.Vector3, UnityEngine.CoreModule, Version=0.0.0.0,
           Culture=neutral, PublicKeyToken=null
-      m_SerializableObject: '{"x":1.0,"y":1.0,"z":0.75}'
+      m_SerializableObject: '{"x":2.25,"y":2.25,"z":2.25}'
     m_Space: -1
   m_Property:
     name: o
@@ -26707,7 +26371,7 @@ MonoBehaviour:
   - {fileID: 8926484042661615556}
   m_ExposedName: TR 02 Scale XYZ
   m_Exposed: 1
-  m_Order: 72
+  m_Order: 12
   m_Category: Tornado Top Ring 02 Settings
   m_Min:
     m_Type:

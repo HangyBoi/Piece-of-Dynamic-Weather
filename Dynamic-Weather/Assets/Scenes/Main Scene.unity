@@ -1637,13 +1637,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 330585543}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.050834727, y: 0.7142667, z: -0.05216144, w: -0.6960733}
-  m_LocalPosition: {x: 50.43, y: 12.9, z: 2.02}
+  m_LocalRotation: {x: -0.10255788, y: -0.7083936, z: -0.105238184, w: 0.69035155}
+  m_LocalPosition: {x: 85.9, y: 3.4, z: 2.02}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -16.9, y: -91.478, z: 0}
 --- !u!114 &330585547
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3296,6 +3296,33 @@ VisualEffect:
       - m_Value: 50
         m_Name: Fog Spawn Rate
         m_Overridden: 1
+      - m_Value: 0.5
+        m_Name: Alpha Clip Threshold
+        m_Overridden: 1
+      - m_Value: 1
+        m_Name: Smoothness
+        m_Overridden: 1
+      - m_Value: 0
+        m_Name: Ambient Occlusion
+        m_Overridden: 1
+      - m_Value: 0
+        m_Name: Metallic
+        m_Overridden: 1
+      - m_Value: 20
+        m_Name: Simple Noise Scale X2
+        m_Overridden: 1
+      - m_Value: 4
+        m_Name: Simple Noise Division
+        m_Overridden: 1
+      - m_Value: 5
+        m_Name: Simple Noise Contrast
+        m_Overridden: 1
+      - m_Value: 0.003
+        m_Name: Voronoi Noise Power
+        m_Overridden: 1
+      - m_Value: 10
+        m_Name: General Noise Intensifier
+        m_Overridden: 1
     m_Vector2f:
       m_Array:
       - m_Value: {x: 100, y: 500}
@@ -3328,7 +3355,13 @@ VisualEffect:
         m_Name: Max Init Scale
         m_Overridden: 1
     m_Vector4f:
-      m_Array: []
+      m_Array:
+      - m_Value: {x: 1, y: 1, z: 1, w: 1}
+        m_Name: Fog Color
+        m_Overridden: 1
+      - m_Value: {x: 0.00037923138, y: 0, z: 0.0034005886, w: 1}
+        m_Name: Emission Color
+        m_Overridden: 1
     m_Uint:
       m_Array: []
     m_Int:
@@ -4066,7 +4099,7 @@ Transform:
   m_GameObject: {fileID: 1368561216}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 4.13, z: 0}
+  m_LocalPosition: {x: 0, y: 5.77, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5661,14 +5694,14 @@ VisualEffect:
         m_Overridden: 1
       - m_Value: 5
         m_Name: Wobble Frequency
-        m_Overridden: 0
+        m_Overridden: 1
       - m_Value: 0.85
         m_Name: Layer1 Dissolve
         m_Overridden: 1
       - m_Value: 0.5
         m_Name: Wobble Intensity
         m_Overridden: 1
-      - m_Value: 0.57
+      - m_Value: 0.4
         m_Name: Core Dissolve
         m_Overridden: 1
       - m_Value: 1.15
@@ -5692,17 +5725,44 @@ VisualEffect:
       - m_Value: 1
         m_Name: General Noise Power
         m_Overridden: 1
-      - m_Value: 0.827
+      - m_Value: 0.799
         m_Name: L1 Dissolve
         m_Overridden: 1
       - m_Value: 1
         m_Name: BR 01 General Noise Power
         m_Overridden: 1
-      - m_Value: 0.5
+      - m_Value: 0.749
         m_Name: BR 01 Dissolve
-        m_Overridden: 0
-      - m_Value: 30
+        m_Overridden: 1
+      - m_Value: 5
         m_Name: Tornado Lifetime Duration
+        m_Overridden: 1
+      - m_Value: 2.24
+        m_Name: Core General Noise Power
+        m_Overridden: 0
+      - m_Value: 20
+        m_Name: L1 Shear Noise Scale
+        m_Overridden: 1
+      - m_Value: 8
+        m_Name: BR 01 Shear Amount
+        m_Overridden: 1
+      - m_Value: 8
+        m_Name: BR 01 Twirl Amount
+        m_Overridden: 1
+      - m_Value: 0.5
+        m_Name: TR 01 Dissolve
+        m_Overridden: 1
+      - m_Value: 8
+        m_Name: TR 01 Shear Amount
+        m_Overridden: 1
+      - m_Value: 8
+        m_Name: TR 01 Twirl Amount
+        m_Overridden: 1
+      - m_Value: 8
+        m_Name: TR 02 Shear Amount
+        m_Overridden: 1
+      - m_Value: 8
+        m_Name: TR 02 Twirl Amount
         m_Overridden: 1
     m_Vector2f:
       m_Array:
@@ -5711,7 +5771,7 @@ VisualEffect:
         m_Overridden: 1
     m_Vector3f:
       m_Array:
-      - m_Value: {x: 1, y: 1, z: 0.75}
+      - m_Value: {x: 3, y: 3, z: 2.5}
         m_Name: Core Scale
         m_Overridden: 1
       - m_Value: {x: 0, y: 9, z: 0}
@@ -5719,6 +5779,18 @@ VisualEffect:
         m_Overridden: 1
       - m_Value: {x: 1.5, y: 1.5, z: 1.25}
         m_Name: Bottom Ring Scale
+        m_Overridden: 1
+      - m_Value: {x: 3.5, y: 3.5, z: 3.5}
+        m_Name: BR 01 Scale
+        m_Overridden: 1
+      - m_Value: {x: 0, y: 27, z: 0}
+        m_Name: TR 01 Position
+        m_Overridden: 1
+      - m_Value: {x: 2.25, y: 2.25, z: 2.25}
+        m_Name: TR 01 Scale XYZ
+        m_Overridden: 1
+      - m_Value: {x: 0, y: 27, z: 0}
+        m_Name: TR 02 Position
         m_Overridden: 1
     m_Vector4f:
       m_Array:
@@ -5737,8 +5809,14 @@ VisualEffect:
       - m_Value: {x: 0.5510858, y: 0.5350659, z: 0.6792453, w: 0}
         m_Name: L1 Color
         m_Overridden: 1
-      - m_Value: {x: 0.31132078, y: 0.14244395, z: 0.2919847, w: 0}
+      - m_Value: {x: 0.23357956, y: 0.23357956, z: 0.2735849, w: 0}
         m_Name: BR 01 Color
+        m_Overridden: 1
+      - m_Value: {x: 0.051296957, y: 0.05077428, z: 0.066037714, w: 0}
+        m_Name: TR 01 Color
+        m_Overridden: 1
+      - m_Value: {x: 0.015735466, y: 0.007220097, z: 0.025943398, w: 0}
+        m_Name: TR 02 Color
         m_Overridden: 1
     m_Uint:
       m_Array: []
@@ -5826,6 +5904,41 @@ VisualEffect:
           m_RotationOrder: 4
         m_Name: ScaleOverLifeZ
         m_Overridden: 1
+      - m_Value:
+          serializedVersion: 2
+          m_Curve:
+          - serializedVersion: 3
+            time: 0
+            value: 1
+            inSlope: 0
+            outSlope: 0
+            tangentMode: 34
+            weightedMode: 0
+            inWeight: 0
+            outWeight: 0.33333334
+          - serializedVersion: 3
+            time: 0.6
+            value: 1
+            inSlope: 0
+            outSlope: 0
+            tangentMode: 0
+            weightedMode: 0
+            inWeight: 0
+            outWeight: 0
+          - serializedVersion: 3
+            time: 1.0004792
+            value: 1.573318
+            inSlope: 1.43158
+            outSlope: 1.43158
+            tangentMode: 34
+            weightedMode: 0
+            inWeight: 0.33333334
+            outWeight: 0
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
+        m_Name: Dissolve Curve
+        m_Overridden: 1
     m_Gradient:
       m_Array: []
     m_NamedObject:
@@ -5851,8 +5964,8 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 3.56, y: 3.56, z: 3.56}
-  m_ConstrainProportionsScale: 1
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1368561217}
   m_Father: {fileID: 0}
