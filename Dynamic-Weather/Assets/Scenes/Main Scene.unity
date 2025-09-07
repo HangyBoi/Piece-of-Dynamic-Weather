@@ -502,7 +502,7 @@ VisualEffect:
       - m_Value: {x: -1, y: 1}
         m_Name: Loop Sway
         m_Overridden: 1
-      - m_Value: {x: 0, y: 6.28}
+      - m_Value: {x: -6.28, y: 6.28}
         m_Name: Min/Max Loop Sway
         m_Overridden: 1
     m_Vector3f:
@@ -513,7 +513,7 @@ VisualEffect:
       - m_Value: {x: 50, y: 20, z: 50}
         m_Name: Spawn Volume Size
         m_Overridden: 1
-      - m_Value: {x: 10, y: 0, z: 0}
+      - m_Value: {x: 0, y: 0, z: 0}
         m_Name: Initial Wind Speed
         m_Overridden: 1
     m_Vector4f:
@@ -882,7 +882,7 @@ VisualEffect:
       - m_Value: 1000
         m_Name: Fog Spawn Rate
         m_Overridden: 1
-      - m_Value: 400
+      - m_Value: 250
         m_Name: Dust Spawn Rate
         m_Overridden: 1
       - m_Value: 0.5
@@ -891,7 +891,7 @@ VisualEffect:
       - m_Value: 1
         m_Name: Smoothness
         m_Overridden: 1
-      - m_Value: 0.3
+      - m_Value: 0
         m_Name: Metallic
         m_Overridden: 1
       - m_Value: 20
@@ -902,6 +902,9 @@ VisualEffect:
         m_Overridden: 1
       - m_Value: 10
         m_Name: General Noise Intensifier
+        m_Overridden: 1
+      - m_Value: 0
+        m_Name: Ambient Occlusion
         m_Overridden: 1
     m_Vector2f:
       m_Array:
@@ -1076,7 +1079,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  - {fileID: 2100000, guid: 53fe0113d08229d46a1aa2e065e53492, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1790,13 +1793,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 330585543}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.10255788, y: -0.7083936, z: -0.105238184, w: 0.69035155}
-  m_LocalPosition: {x: 85.9, y: 3.4, z: 2.02}
+  m_LocalRotation: {x: 0.03711533, y: -0.36598104, z: 0.01460956, w: 0.9297672}
+  m_LocalPosition: {x: 34.41252, y: 17.082785, z: -32.53001}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: -16.9, y: -91.478, z: 0}
+  m_LocalEulerAnglesHint: {x: 6.87, y: -91.478, z: 0}
 --- !u!114 &330585547
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5260,7 +5263,7 @@ VisualEffect:
       - m_Value: 0.1
         m_Name: Min Life Time
         m_Overridden: 1
-      - m_Value: 30
+      - m_Value: 20
         m_Name: Loop Amplitude
         m_Overridden: 1
       - m_Value: 1
@@ -5291,7 +5294,7 @@ VisualEffect:
       - m_Value: {x: 50, y: 50, z: 50}
         m_Name: Spawn Volume Size
         m_Overridden: 1
-      - m_Value: {x: 10, y: 0, z: 0}
+      - m_Value: {x: 0, y: 0, z: 0}
         m_Name: Initial Wind Speed
         m_Overridden: 1
     m_Vector4f:
