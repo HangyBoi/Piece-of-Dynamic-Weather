@@ -21,7 +21,7 @@ This repository contains a portfolio project demonstrating the creation of a dyn
 
 ## Technologies Used
 
-*   **Engine:** Unity 6000.1.14f1 (URP)
+*   **Engine:** Unity 6.1 (6000.1.14f1) (URP)
 *   **Core Graphics:** Visual Effect Graph, Shader Graph
 *   **Scripting:** C#
 *   **3D Modeling:** Blender (for the custom tornado mesh)
