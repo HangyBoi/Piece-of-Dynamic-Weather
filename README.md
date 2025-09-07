@@ -31,7 +31,7 @@ This repository contains a portfolio project demonstrating the creation of a dyn
 
 1.  **Clone the Repository:**
     ```bash
-    git clone https://github.com/YourUsername/YourRepositoryName.git
+    git clone https://github.com/HangyBoi/Piece-of-Dynamic-Weather.git
     ```
 2.  **Open in Unity Hub:** Open the project using Unity Hub with the specified Unity version (or newer). The editor will import the project and its dependencies.
 3.  **Explore the Main Scene:** The primary showcase scene can be found at `Assets/Scenes/MainScene.unity` (or your scene's actual path).
