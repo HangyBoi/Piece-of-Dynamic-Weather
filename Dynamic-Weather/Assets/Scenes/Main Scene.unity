@@ -2913,11 +2913,11 @@ Camera:
     y: 0
     width: 1
     height: 1
-  near clip plane: 0.3
+  near clip plane: 0.01
   far clip plane: 1000
   field of view: 60
   orthographic: 0
-  orthographic size: 5
+  orthographic size: 50
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -2941,13 +2941,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 330585543}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.03711533, y: -0.36598104, z: 0.01460956, w: 0.9297672}
-  m_LocalPosition: {x: 34.41252, y: 17.082785, z: -32.53001}
+  m_LocalRotation: {x: 0.04413545, y: 0.126074, z: -0.0056147384, w: 0.99102265}
+  m_LocalPosition: {x: 0, y: 19, z: -38}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 6.87, y: -91.478, z: 0}
+  m_Father: {fileID: 2004553884}
+  m_LocalEulerAnglesHint: {x: 5.1, y: 14.5, z: 0}
 --- !u!114 &330585547
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3578,7 +3578,7 @@ MonoBehaviour:
   rainVFX: {fileID: 866586586}
   midSkyLightningVFX: {fileID: 317161167}
   highSkyLightningVFX: {fileID: 788953916}
-  tornadoActivationThreshold: 0.5
+  tornadoActivationThreshold: 0.3
   minMaxTornadoScale: {x: 0.5, y: 1.5}
   maxTornadoSpeed: 10
   maxTornadoForce: 100
@@ -14011,6 +14011,7 @@ Transform:
   - {fileID: 1368561217}
   - {fileID: 141756792}
   - {fileID: 193687822}
+  - {fileID: 330585546}
   m_Father: {fileID: 733922788}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!135 &2004553885
@@ -15230,7 +15231,6 @@ MeshFilter:
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
-  - {fileID: 330585546}
   - {fileID: 410087041}
   - {fileID: 832575519}
   - {fileID: 287124375}
