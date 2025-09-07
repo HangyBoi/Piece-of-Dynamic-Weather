@@ -1,6 +1,6 @@
 # Unity Dynamic Weather System with VFX Graph
 
-![Showcase GIF](INSERT_LINK_TO_YOUR_BEST_GIF_HERE.gif)
+![tornadoHomePage-compressed](https://github.com/user-attachments/assets/531a0bcd-a09f-41b6-9dee-04d80df3a0c0)
 
 This repository contains a portfolio project demonstrating the creation of a dynamic, real-time weather system in Unity. The project's centerpiece is a stylized tornado, complemented by a full suite of atmospheric effects including wind, rain, and lightning. The entire system is driven by Unity's Visual Effect Graph and orchestrated by a central C# controller, allowing for smooth transitions from calm conditions to a full-blown storm.
 
@@ -18,6 +18,8 @@ This repository contains a portfolio project demonstrating the creation of a dyn
     *   **Procedural Lightning:** Two layers of lightning effects repurposed from the core wind system.
     *   **Ambient Dust:** A localized dust cloud that adds texture and grounds the tornado.
 *   **Modular and Organized:** The project is structured with clear separation between VFX assets, control scripts, and scene setup, making it easy to understand and navigate.
+
+![SliderTornado-ezgif com-optimize](https://github.com/user-attachments/assets/21b61795-3a99-4737-8b3b-7a1f524ba7c9)
 
 ## Technologies Used
 
