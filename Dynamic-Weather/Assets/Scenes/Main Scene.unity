@@ -3284,7 +3284,7 @@ VisualEffect:
       - m_Value: 1
         m_Name: Turbulence Frequency
         m_Overridden: 1
-      - m_Value: 10000
+      - m_Value: 50000
         m_Name: Rain Drop Rate
         m_Overridden: 1
       - m_Value: 7
@@ -3293,9 +3293,12 @@ VisualEffect:
       - m_Value: 0.11
         m_Name: Rain Transparency
         m_Overridden: 1
+      - m_Value: 50
+        m_Name: Fog Spawn Rate
+        m_Overridden: 1
     m_Vector2f:
       m_Array:
-      - m_Value: {x: 10, y: 100}
+      - m_Value: {x: 100, y: 500}
         m_Name: Min/Max Init Scale.XYZ
         m_Overridden: 1
       - m_Value: {x: -180, y: 180}

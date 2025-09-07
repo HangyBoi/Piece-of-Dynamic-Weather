@@ -734,10 +734,10 @@
     "m_Guid": {
         "m_GuidSerialized": "b686bee8-c80b-4820-bcf9-691ea6cd079f"
     },
-    "m_Name": "Noise Contrast",
+    "m_Name": "Simple Noise Contrast Combined",
     "m_DefaultRefNameVersion": 1,
-    "m_RefNameGeneratedByDisplayName": "Noise Contrast",
-    "m_DefaultReferenceName": "_Noise_Contrast",
+    "m_RefNameGeneratedByDisplayName": "Simple Noise Contrast Combined",
+    "m_DefaultReferenceName": "_Simple_Noise_Contrast_Combined",
     "m_OverrideReferenceName": "",
     "m_GeneratePropertyBlock": true,
     "m_UseCustomSlotLabel": false,
@@ -791,10 +791,10 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": 400.9999694824219,
-            "y": 1025.0,
-            "width": 208.00003051757813,
-            "height": 278.0
+            "x": 401.0,
+            "y": 1022.9999389648438,
+            "width": 208.0,
+            "height": 278.00006103515627
         }
     },
     "m_Slots": [
@@ -831,10 +831,10 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -51.999996185302737,
+            "x": -146.9999237060547,
             "y": 814.0,
-            "width": 153.0,
-            "height": 34.0
+            "width": 247.99990844726563,
+            "height": 33.99993896484375
         }
     },
     "m_Slots": [
@@ -1132,9 +1132,9 @@
         "m_Position": {
             "serializedVersion": "2",
             "x": 146.00001525878907,
-            "y": 1025.0,
-            "width": 207.9999542236328,
-            "height": 302.0
+            "y": 1022.9999389648438,
+            "width": 208.00001525878907,
+            "height": 301.99993896484377
         }
     },
     "m_Slots": [
@@ -1400,7 +1400,7 @@
     "m_Type": "UnityEditor.ShaderGraph.Vector4MaterialSlot",
     "m_ObjectId": "2b0cc69415794af39eeb47ac2859a2e5",
     "m_Id": 0,
-    "m_DisplayName": "Color",
+    "m_DisplayName": "Emission Color",
     "m_SlotType": 1,
     "m_Hidden": false,
     "m_ShaderOutputName": "Out",
@@ -1739,7 +1739,7 @@
     "m_Type": "UnityEditor.ShaderGraph.Vector1MaterialSlot",
     "m_ObjectId": "429cc5b49ed241e99ba3af36155ebdfc",
     "m_Id": 0,
-    "m_DisplayName": "Noise Division",
+    "m_DisplayName": "Simple Noise Division Combined",
     "m_SlotType": 1,
     "m_Hidden": false,
     "m_ShaderOutputName": "Out",
@@ -1952,10 +1952,10 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -317.0,
+            "x": -410.9999084472656,
             "y": 814.0,
-            "width": 148.99996948242188,
-            "height": 34.0
+            "width": 242.99993896484376,
+            "height": 33.99993896484375
         }
     },
     "m_Slots": [
@@ -2937,7 +2937,7 @@
     "m_Type": "UnityEditor.ShaderGraph.Vector1MaterialSlot",
     "m_ObjectId": "96022046a94547acaf380a282f41cc59",
     "m_Id": 0,
-    "m_DisplayName": "Noise Contrast",
+    "m_DisplayName": "Simple Noise Contrast Combined",
     "m_SlotType": 1,
     "m_Hidden": false,
     "m_ShaderOutputName": "Out",
@@ -3158,10 +3158,10 @@
     "m_Guid": {
         "m_GuidSerialized": "a5b1396f-9588-42a3-a970-097fa4e03ae4"
     },
-    "m_Name": "Noise Division",
+    "m_Name": "Simple Noise Division Combined",
     "m_DefaultRefNameVersion": 1,
-    "m_RefNameGeneratedByDisplayName": "Noise Division",
-    "m_DefaultReferenceName": "_Noise_Division",
+    "m_RefNameGeneratedByDisplayName": "Simple Noise Division Combined",
+    "m_DefaultReferenceName": "_Simple_Noise_Division_Combined",
     "m_OverrideReferenceName": "",
     "m_GeneratePropertyBlock": true,
     "m_UseCustomSlotLabel": false,
